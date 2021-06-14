@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sen', sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url(/images/sankraman_lpss-01.jpg);
+    background-repeat: no-repeat;
+    background-size:110%;
+    
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+nav .logo{
+    margin-top: 2%;
+    width: 40%;
+}
+nav .menu{
+    width: 40%;
+    display: flex;
+   justify-content:space-around;
+}
+.menu a{
+    width: 50%;
+    text-decoration: none;
+  font-weight: bold;
+  margin-top: 15%;
+}
+main {
+    margin-right: 15%;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+section{
+
+}
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+section h1{
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+section p{
+    font-size: 25px;
+    color: #eee;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+} 
+section a:first-child{
+    color: #00b894;
+}
+section .btnone{
+    background: #fff;
+    color: #000;
+}
+.btnone:hover{
+    background-color: #00b894;
+    color: white;
+}
+
+section .btntwo{
+    background-color: #16d8b1;
+    color: rgb(73, 53, 53);
+}
+.btntwo:hover{
+    background: #fff;
+    color: #000;
+}
+.change_content:after{
+     content: "";
+     animation: changetext 10s infinite linear;
+color: #00b894;
+}
+@keyframes changetext{
+    0%{content:"Akkalkot";}
+    20%{content:"Tuljapur";}
+    60%{content:"Pandharpur";}
+    100%{content:"Ujani Dam";}
+    140%{content:"Science Centre";}
+    180%{content:"Siddeshwar Temple";}
+}
+.paragraph{
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+}
